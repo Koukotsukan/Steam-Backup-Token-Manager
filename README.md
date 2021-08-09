@@ -18,11 +18,11 @@
 
 If there are any questions regarding copyright, please open an issue in GitHub.
 
+## Open Source License
+本应用源代码采用Mozilla Public License 2.0发布
+![License.png](https://i.loli.net/2021/08/09/vZ96UNqoJBYXkym.png)
+
 ## Download
 [直链下载](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/releases)
 
 [华为应用商店(海外)下载](https://appgallery.huawei.com/#/app/C104607179)
-
-## Open Source License
-本应用源代码采用Mozilla Public License 2.0发布
-![License.png](https://i.loli.net/2021/08/09/vZ96UNqoJBYXkym.png)
