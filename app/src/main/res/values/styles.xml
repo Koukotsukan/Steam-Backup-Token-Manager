@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">#f3f3f3</item>
+        <item name="android:textColor">#f3f3f3</item>
+        <item name="android:textColorPrimary">#f3f3f3</item>
+    </style>
+    <style name="SettingsFragmentStyle">
+        <item name="android:textColorSecondary">#989898</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:colorAccent">#3186ad</item>
+        <item name="android:background">#171717</item>
+        <item name="colorControlActivated">#3186ad</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/widget_shape"
+    android:padding="@dimen/widget_margin"
+    android:theme="@style/ThemeOverlay.Steamguardhelper.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:background="#1b2838"
+        android:contentDescription="@string/appwidget_text"
+        android:text="@string/appwidget_text"
+        android:textColor="?attr/appWidgetTextColor"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appwidget_text"
+        android:layout_alignStart="@+id/appwidget_text"
+        android:layout_alignEnd="@+id/appwidget_text"
+        android:layout_gravity="center"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="144dp"
+        android:indeterminate="false"
+        android:max="15"
+        android:progress="15"
+        android:progressBackgroundTint="#FFFFFF"
+        android:progressTint="#3289BE"
+        android:scaleX="1"
+        android:scaleY="2" />
+</RelativeLayout>

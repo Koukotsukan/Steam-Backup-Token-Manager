@@ -1,0 +1,13 @@
+*.iml
+.gradle
+/gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
