@@ -4,7 +4,7 @@
 
 
 
-    <string name="unlock_to_get">Press To Get</string>
+    <string name="unlock_to_get">Click To Get</string>
     <string name="remained_code">Remaining Tokens : </string>
     <string name="copy_done">Token copied to clipboard</string>
     <string name="null_result">No token obtained</string>
@@ -21,8 +21,8 @@
     <string name="extend">Extend</string>
     <string name="hide">Hide</string>
 
-    <string name="statement">This application is a free third-party application and is not affiliated with Valve Corporation or Steam. This app is designed to help users manage backup tokens more easily. This application does not require Internet connection and does not collect any user information.</string>
-    <string name="tip">Tip: Backup tokens can be used as tokens, please do not share backup tokens with suspicious people. There is no limit to the validity of a one-time backup token, please do not share multiple tokens to strangers</string>
+    <string name="statement">This app is not affiliated with Valve Corporation or Steam, and it is designed to help users manage backup tokens more easily. This app does not require Internet connection and does not collect any user information.</string>
+    <string name="tip">Tip: Backup tokens can be used as tokens, please do not share backup tokens with suspicious people. There is no time limit to the validity of backup tokens, please do not share multiple tokens to strangers</string>
 
 
 
@@ -41,9 +41,9 @@
 
     <string name="tutorial">Help</string>
         <string name="tutorial_title">Help</string>
-        <string name="tutorial_copy">The link has been copied to the clipboard, please open it in your browser</string>
+        <string name="tutorial_copy">Link copied to the clipboard, please open it in your browser</string>
         <string name="tutorial_importing">1. Open https://store.steampowered.com/twofactor/manage <b>(click this text to open directly, long press to copy the link)</b> with any browser and login to your Steam account. \n2. Click [Get Backup Codes], then enter the obtained SMS verification code and click [Generate Code Now]. \n3. Select all codes from the 1st to the 30th and copy them. \n4. Go back to the [Import] function of this application and paste your tokens.</string>
-        <string name="tutorial_howtouse">If you are using Steam Guard, the process will be similar to how you would use a Steam one-time token. When you log in to Steam and enter your correct account and password, Steam will ask you for your mobile token, and you will be able to log in normally by entering your backup token.</string>
+        <string name="tutorial_howtouse">If you are using Steam Guard, the process will be similar to how you would use a Steam Guard token. When you log in to Steam and enter your correct account and password, Steam will ask you for your mobile token, and you will be able to log in normally by entering your backup token.</string>
         <string name="tutorial_safety">1. Please do not share a large number of tokens with others, the expiration date of backup tokens is not limited, if you hand over a large number of tokens to others, you may put your account in danger. \n2. Backup tokens can be destroyed and regenerated, if you accidentally leak the spare token, you can destroy the original backup tokens by regenerating new ones.</string>
         <string name="tutorial_update">Because I want to minimize the permissions required by the application, this application does not provide the function of automatic checking for updates, but you can get the version update status through app store by yourself.</string>
         <string name="tutorial_validation">This application is a local application and does not require network access. This application only provides local token management function, the token will not take effect because it is added to this application, nor will it be invalidated because it is deleted in this application, the validity of the token is only related to whether the token is used or destroyed in Steam.</string>
@@ -91,7 +91,7 @@
 
 
 
-    <string name="appwidget_text">Press To Get</string>
+    <string name="appwidget_text">Click To Get</string>
     <string name="add_widget">Add App Widget</string>
     <string name="widget_update">Updated, remaining tokens: </string>
 
