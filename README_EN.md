@@ -31,6 +31,5 @@ Mozilla Public License 2.0, see details please click [here](LICENSE)
 
 [CoolAPK Market(Chinese Mainland)【Under Review】](https://www.coolapk.com/apk/286904)
 
-[Xiaomi GetApps【Under Review】](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/)
-
+Xiaomi GetApps: Search 【Steam Backup Token Manager】 in GetApps
 [Huawei App Gallery](https://appgallery.huawei.com/#/app/C104607179)
