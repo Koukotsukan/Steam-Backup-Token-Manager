@@ -41,7 +41,7 @@ public class ImportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_import);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        setTitle("导入备用令牌");
+        setTitle(this.getString(R.string.import_title));
 
 
         ip_content = (EditText) findViewById(R.id.ip_content);
@@ -54,7 +54,7 @@ public class ImportActivity extends AppCompatActivity {
             public void onClick(View v) {
                 ip_content.setText("");
                 Context context = getApplicationContext();
-                CharSequence text = "已清除编辑框";
+                CharSequence text = context.getString(R.string.import_purge);
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
@@ -80,7 +80,6 @@ public class ImportActivity extends AppCompatActivity {
                     }
                 }
                 Log.d("Code List", codeList.toString() + "\n\nSize: " + codeList.size());
-                // 缺少返回MainActivity的方法
                 SharedPreferences.Editor editor = getSharedPreferences("codeList", MODE_PRIVATE).edit();
                 editor.putInt("codeNumbers", codeList.size());
                 for (int i=0; i<codeList.size();i++){
@@ -90,16 +89,13 @@ public class ImportActivity extends AppCompatActivity {
                 if(codeList.size()==0){
                     Context context = getApplicationContext();
                     int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context, "导入失败", duration);
+                    Toast toast = Toast.makeText(context, context.getString(R.string.import_failed), duration);
                     toast.show();
                 }else {
-//                    Intent intent = null;
-//                    intent = new Intent(ImportActivity.this, MainActivity.class);
-//                    startActivity(intent);
                     finish();
                     Context context = getApplicationContext();
                     int duration = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(context, "导入成功", duration);
+                    Toast toast = Toast.makeText(context, context.getString(R.string.import_successful), duration);
                     toast.show();
                 }
             }

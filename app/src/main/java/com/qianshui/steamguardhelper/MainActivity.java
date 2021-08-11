@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (!deny_progressBar) {
-                    code.setText("点击获取");
+                    code.setText(getApplicationContext().getString(R.string.unlock_to_get));
                     current_code = "";
                     progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#3289BE")));
                     code.setTextColor(Color.parseColor("#ffffff"));
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
                     ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                     clipboard.setText(current_code);
                     Context context = getApplicationContext();
-                    CharSequence text = "已复制令牌至剪切板";
+                    CharSequence text = context.getString(R.string.copy_done);
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                     vibrator.vibrate(40);
                 } else {
                     Context context = getApplicationContext();
-                    CharSequence text = "未获取到令牌，复制失败";
+                    CharSequence text = context.getString(R.string.null_result);
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
@@ -152,12 +152,12 @@ public class MainActivity extends AppCompatActivity {
                 if (!current_code.equals("")) {
                     Intent shareIntent = new Intent();
                     shareIntent.setAction(Intent.ACTION_SEND);
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, "我的Steam一次性登录令牌为" + current_code.replaceAll("\\\n", "") + "。\n\n来自 【Steam备用令牌管理器】");
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, getApplicationContext().getString(R.string.share_content_part_1) + current_code.substring(0, 7) + getApplicationContext().getString(R.string.share_content_part_2));
                     shareIntent.setType("text/plain");
-                    startActivity(Intent.createChooser(shareIntent, "分享令牌到"));
+                    startActivity(Intent.createChooser(shareIntent, getApplicationContext().getString(R.string.share_to)));
                 } else {
                     Context context = getApplicationContext();
-                    CharSequence text = "未获取到令牌，分享失败";
+                    CharSequence text = context.getString(R.string.null_result);
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
@@ -188,17 +188,17 @@ public class MainActivity extends AppCompatActivity {
 //                        mCountDownTimer.start();
 //                    }
 //                }else{
-                code.setText("点击获取");
+                code.setText(getApplicationContext().getString(R.string.unlock_to_get));
                 current_code = "";
                 codeStatus = false;
                 progressBar.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#3289BE")));
                 code.setTextColor(Color.parseColor("#ffffff"));
                 progressBar.setProgress(60);
-                Context context = getApplicationContext();
-                CharSequence text = "当前没有数据";
-                int duration = Toast.LENGTH_SHORT;
-                Toast toast = Toast.makeText(context, text, duration);
-//                    toast.show();
+//                Context context = getApplicationContext();
+//                CharSequence text = "当前没有数据";
+//                int duration = Toast.LENGTH_SHORT;
+//                Toast toast = Toast.makeText(context, text, duration);
+////                    toast.show();
                 mCountDownTimer.cancel();
 //                }
             }
@@ -236,20 +236,20 @@ public class MainActivity extends AppCompatActivity {
                             ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                             clipboard.setText(current_code);
                             Context context = getApplicationContext();
-                            CharSequence text = "已复制令牌至剪切板";
+                            CharSequence text = context.getString(R.string.copy_done);
                             int duration = Toast.LENGTH_SHORT;
                             Toast toast = Toast.makeText(context, text, duration);
                             toast.show();
                         }
                         code.setText(current_code);
-                        remain.setText("剩余容量: " + codeList.size());
+                        remain.setText(getApplicationContext().getString(R.string.remained_code) + codeList.size());
                         mCountDownTimer.start();
 
                     }
                 } else {
                     if (!codeStatus) {
                         Context context = getApplicationContext();
-                        CharSequence text = "当前没有数据";
+                        CharSequence text = context.getString(R.string.no_data);
                         int duration = Toast.LENGTH_SHORT;
                         Toast toast = Toast.makeText(context, text, duration);
                         toast.show();
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
                     ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                     clipboard.setText(current_code);
                     Context context = getApplicationContext();
-                    CharSequence text = "已复制令牌至剪切板";
+                    CharSequence text = context.getString(R.string.copy_done);
                     int duration = Toast.LENGTH_SHORT;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
@@ -289,7 +289,7 @@ public class MainActivity extends AppCompatActivity {
             String code = preferencesDataList.getString("item_" + i, null);
             codeList.add(code);
         }
-        remain.setText("剩余容量: " + codeList.size());
+        remain.setText(getApplicationContext().getString(R.string.remained_code) + codeList.size());
 
 
         SharedPreferences progress_move = PreferenceManager.getDefaultSharedPreferences(this);

@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Steam備用令牌管理器</string>
+
+
+
+
+    <string name="unlock_to_get">點擊獲取</string>
+    <string name="remained_code">剩餘容量:</string>
+    <string name="copy_done">已復制令牌至剪切板</string>
+    <string name="null_result">未獲取到令牌</string>
+    <string name="no_data">沒有數據</string>
+
+
+
+    <string name="copy">複製</string>
+    <string name="share">分享</string>
+        <string name="share_to">分享到</string>
+        <string name="share_content_part_1">我的Steam一次性登錄令牌為</string>
+        <string name="share_content_part_2">。\n\n來自 【Steam備用令牌管理器】</string>
+    <string name="delete">刪除</string>
+    <string name="extend">延長</string>
+    <string name="hide">隱藏</string>
+
+    <string name="statement">本應用為免費第三方應用，與Valve公司或Steam無關。本應用旨在幫助用戶更方便的管理備用令牌。本應用不需要聯網且不收集任何用戶信息。</string>
+    <string name="tip">提示：備用令牌可替代令牌使用，請勿將備用碼分享給可疑人士。一次性備用令牌的有效期不受限制，請勿分享多個備用碼給陌生人。</string>
+
+
+
+    <string name="import_code">導入</string>
+        <string name="import_title">導入備用令牌</string>
+        <string name="import_text">請輸入備用令牌:</string>
+        <string name="clear">清空</string>
+        <string name="confirm">確定</string>
+        <string name="import_purge">已清除編輯框</string>
+        <string name="import_successful">導入成功</string>
+        <string name="import_failed">導入失敗</string>
+        <string name="ip_helper">導入格式: \n1. 可以手動在每行輸入一個備用令牌 \n2. 在Steam生成備用令牌後直接複製包含序號和令牌的全部輸出，然後粘貼到本應用中。詳見【幫助】->【如何導入備用令牌】</string>
+        <string name="ip_tip">注意: 導入新的數據會覆蓋掉原來的數據。</string>
+
+
+
+    <string name="tutorial">幫助</string>
+        <string name="tutorial_title">幫助</string>
+        <string name="tutorial_copy">已復制鏈接到剪貼板，請到瀏覽器打開</string>
+        <string name="tutorial_importing">1. 用任意瀏覽器打開https://store.steampowered.com/twofactor/manage <b>(點擊本文本即可直接打開，長按可複制鏈接)</b> 並登錄Steam賬號。 \n2.點擊【獲取備用碼】，然後輸入獲取到的短信驗證碼並點擊【立即生成代碼】。 \n3. 選擇第1個到第30個的全部備用碼並複制。 \n4. 回到本應用的【導入】功能中粘貼你的備用碼。 </string>
+        <string name="tutorial_howtouse">如果您綁定了Steam移動令牌，那麼此過程將和您使用Steam一次性令牌的過程類似，當您登錄Steam並輸入了正確的賬號和密碼的時候，Steam會向您索取手機令牌，此時輸入備用令牌即可正常登錄。 </string>
+        <string name="tutorial_safety">1. 請不要將大量備用令牌分享給他人，備用令牌的有效期不受限制，如果您將大量的備用令牌交予他人則有可能將您的賬號陷入危險當中。 \n2. 備用令牌可以銷毀並重新生成，如果您誤將備用令牌洩露，則可以通過重新生成備用令牌的方法來銷毀原來生成的備用令牌。 </string>
+        <string name="tutorial_update">因為本人希望把應用所需要的權限做到最少，故本應用不提供自動檢查更新的功能，但您可以<b>點擊此文本</b>來自行通過酷安應用商店獲取版本更新狀態。 </string>
+        <string name="tutorial_validation">本應用為本地應用，不需要網路權限，本應用只提供本地的令牌管理功能，令牌不會因為添加到本應用而生效，也不會因為在本應用中被刪除而失效，令牌的有效性只與令牌是否被使用或銷毀有關。 </string>
+        <string name="update_url">https://www.coolapk.com/apk/286904</string>
+
+    <string name="settings">設置</string>
+    <string name="title_activity_settings">設置</string>
+        <string name="function_settings">功能開關</string>
+        <string name="purge_data">清除數據</string>
+        <string name="update_check">自動檢查更新</string>
+        <string name="progress_move">禁用讀條</string>
+        <string name="summary_progress_move">打開此選項後應用將不在令牌獲取1分鐘後隱藏令牌</string>
+        <string name="no_screenshot">禁止截屏</string>
+        <string name="summary_no_screenshot">打開此選項後不能在主頁面截屏</string>
+        <string name="auto_copy">自動複製令牌</string>
+        <string name="summary_auto_copy">獲取到令牌後自動複製到剪貼板</string>
+        <string name="purge_all">清除本地所有令牌</string>
+        <string name="summary_purge_all">此操作僅會清除掉本地所有存儲的令牌，不代表這些令牌會失效</string>
+        <string name="warn">警告</string>
+        <string name="warn_content">你即將清除本地存儲的所有令牌，但沒有使用過的令牌仍然能夠正常使用，請確認是否刪除？</string>
+        <string name="yes">是</string>
+        <string name="no">否</string>
+        <string name="purge_done">清除成功</string>
+        <string name="app_info">應用信息</string>
+        <string name="rate">評價應用</string>
+        <string name="summary_rate">有建議嗎？到應用商店評價本應用</string>
+        <string name="version">應用版本</string>
+        <string name="current_version">當前版本: v</string>
+
+
+
+    <string name="about">關於</string>
+        <string name="creator"><b>酷安</b>\@资深潜水用户</string>
+        <string name="privacy_statement">本應用為第三方愛好者應用，與Valve公司或Steam無關。本應用不需要聯網權限，也不收集任何用戶信息。 \n\n使用本應用默認您接受以下協議：\n1. 本應用免費提供，用戶不允許倒賣、破解或惡意修改本應用。 \n2. 用戶數據默認通過Android安全保護措施存儲，如果您通過非安全設備或獲取root權限的Android設備使用本應用的同時導致數據洩露，開發者無需承擔任何責任。 \n3. 因用戶使用不當導致的數據洩露問題與開發者無關。
+        </string><string name="about_title">關於</string>
+        <string name="about_begger">請截圖後到WeChat掃描，謝謝您！</string>
+        <string name="begger_title">WeChat讚賞碼</string>
+        <string name="copyright_contact">If you have any questions regarding copyright, please email me at ayersneo@gmail.com</string>
+        <string name="tutorial_importing_title">如何導入備用令牌</string>
+        <string name="tutorial_howtouse_title">如何使用備用令牌</string>
+        <string name="tutorial_safety_title">如何保證備用令牌的安全</string>
+        <string name="tutorial_update_title">如何讓本應用保持最新版本</string>
+        <string name="tutorial_validation_title">本應用中存儲的令牌是否同步</string>
+
+
+
+    <string name="appwidget_text">點擊獲取</string>
+    <string name="add_widget">添加桌面小組件</string>
+    <string name="widget_update">已更新，剩餘容量: </string>
+
+</resources>

@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Steam Backup Token Manager</string>
+
+
+
+
+    <string name="unlock_to_get">Press To Get</string>
+    <string name="remained_code">Remaining Tokens : </string>
+    <string name="copy_done">Token copied to clipboard</string>
+    <string name="null_result">No token obtained</string>
+    <string name="no_data">No Token</string>
+
+
+
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+        <string name="share_to">Share to</string>
+        <string name="share_content_part_1">My Steam one-time login token is</string>
+        <string name="share_content_part_2">\n\nFrom Steam Backup Token Manager</string>
+    <string name="delete">Delete</string>
+    <string name="extend">Extend</string>
+    <string name="hide">Hide</string>
+
+    <string name="statement">This application is a free third-party application and is not affiliated with Valve Corporation or Steam. This app is designed to help users manage backup tokens more easily. This application does not require Internet connection and does not collect any user information.</string>
+    <string name="tip">Tip: Backup tokens can be used as tokens, please do not share backup tokens with suspicious people. There is no limit to the validity of a one-time backup token, please do not share multiple tokens to strangers</string>
+
+
+
+    <string name="import_code">Import</string>
+        <string name="import_title">Import Backup Token</string>
+        <string name="import_text">Please Enter Backup Tokens: </string>
+        <string name="clear">Clear</string>
+        <string name="confirm">Confirm</string>
+        <string name="import_purge">Cleared edit box</string>
+        <string name="import_successful">Import successful</string>
+        <string name="import_failed">Import failed</string>
+        <string name="ip_helper">Import Methods:\n1. You can manually enter backup tokens in each line \n2. Copy the entire output containing serial numbers and tokens directly after backup tokens are generated in Steam, and then paste them into this app. See [Help]->[How to import backup tokens] for details</string>
+        <string name="ip_tip">Note: Importing new data will overwrite the original data.</string>
+
+
+
+    <string name="tutorial">Help</string>
+        <string name="tutorial_title">Help</string>
+        <string name="tutorial_copy">The link has been copied to the clipboard, please open it in your browser</string>
+        <string name="tutorial_importing">1. Open https://store.steampowered.com/twofactor/manage <b>(click this text to open directly, long press to copy the link)</b> with any browser and login to your Steam account. \n2. Click [Get Backup Codes], then enter the obtained SMS verification code and click [Generate Code Now]. \n3. Select all codes from the 1st to the 30th and copy them. \n4. Go back to the [Import] function of this application and paste your tokens.</string>
+        <string name="tutorial_howtouse">If you are using Steam Guard, the process will be similar to how you would use a Steam one-time token. When you log in to Steam and enter your correct account and password, Steam will ask you for your mobile token, and you will be able to log in normally by entering your backup token.</string>
+        <string name="tutorial_safety">1. Please do not share a large number of tokens with others, the expiration date of backup tokens is not limited, if you hand over a large number of tokens to others, you may put your account in danger. \n2. Backup tokens can be destroyed and regenerated, if you accidentally leak the spare token, you can destroy the original backup tokens by regenerating new ones.</string>
+        <string name="tutorial_update">Because I want to minimize the permissions required by the application, this application does not provide the function of automatic checking for updates, but you can get the version update status through app store by yourself.</string>
+        <string name="tutorial_validation">This application is a local application and does not require network access. This application only provides local token management function, the token will not take effect because it is added to this application, nor will it be invalidated because it is deleted in this application, the validity of the token is only related to whether the token is used or destroyed in Steam.</string>
+        <string name="update_url">none</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+        <string name="function_settings">Functions</string>
+        <string name="purge_data">Clear</string>
+        <string name="update_check">Automatically check update</string>
+        <string name="progress_move">Remove progress bar</string>
+        <string name="summary_progress_move">Turn on this option then the app will not hide the token after 1 minute of token acquisition</string>
+        <string name="no_screenshot">No screenshot</string>
+        <string name="summary_no_screenshot">Turn on this option then you cannot take screenshots on the main page</string>
+        <string name="auto_copy">Auto-copy token</string>
+        <string name="summary_auto_copy">Automatically copy the token to the clipboard after it is obtained</string>
+        <string name="purge_all">Clear all local tokens</string>
+        <string name="summary_purge_all">This operation will only clear all locally stored tokens, it does not mean that these tokens will become invalid</string>
+        <string name="warn">Warn</string>
+        <string name="warn_content">You are about to clear all locally stored tokens, but unused tokens are still valid, are you sure you want to delete them?</string>
+        <string name="yes">Yes</string>
+        <string name="no">No</string>
+        <string name="purge_done">Clear successfully</string>
+        <string name="app_info">App Info</string>
+        <string name="rate">Rate app</string>
+        <string name="summary_rate">Suggestions？Rate the app in app store</string>
+        <string name="version">App version</string>
+        <string name="current_version">v</string>
+
+
+
+    <string name="about">About</string>
+        <string name="creator"><b>CoolAPK</b>\@资深潜水用户</string>
+        <string name="privacy_statement">This app is a third-party hobbyist app and is not affiliated with Valve Corporation or Steam. This app does not require network access and does not collect any user information. \n\nBy using this application you accept the following agreement by default: \n1. This application is provided free of charge and users are not allowed to resell, crack or maliciously modify this application. \n2. User data is stored through Android security protection measures by default. If you use this app through a non-secure device or an Android device with root access while causing data leakage, the developer is not responsible for any liability. \n3. The developer is not responsible for any data leakage problems caused by inappropriate use by users. </string>.
+        <string name="about_title">About</string>
+        <string name="about_begger">Please screenshot and scan the code on WeChat</string>
+        <string name="begger_title">WeChat Appreciation Code</string>
+        <string name="copyright_contact">If you have any questions regarding copyright, please email me at ayersneo@gmail.com</string>
+        <string name="tutorial_importing_title">How to import backup tokens?</string>
+        <string name="tutorial_howtouse_title">How to use backup tokens</string>
+        <string name="tutorial_safety_title">How to secure backup tokens</string>
+        <string name="tutorial_update_title">How to keep this app up to date?</string>
+        <string name="tutorial_validation_title">Are tokens stored in this app synchronized?</string>
+
+
+
+    <string name="appwidget_text">Press To Get</string>
+    <string name="add_widget">Add App Widget</string>
+    <string name="widget_update">Updated, remaining tokens: </string>
+
+</resources>

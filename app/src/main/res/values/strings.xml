@@ -1,38 +1,98 @@
 <resources>
     <string name="app_name">Steam备用令牌管理器</string>
+
+
+
+
     <string name="unlock_to_get">点击获取</string>
-    <string name="remained_code">剩余容量: 点击获取</string>
+    <string name="remained_code">剩余容量: </string>
+    <string name="copy_done">已复制令牌至剪切板</string>
+    <string name="null_result">未获取到令牌</string>
+    <string name="no_data">没有数据</string>
+
+
+
     <string name="copy">复制</string>
     <string name="share">分享</string>
+        <string name="share_to">分享到</string>
+        <string name="share_content_part_1">我的Steam一次性登录令牌为</string>
+        <string name="share_content_part_2">。\n\n来自 【Steam备用令牌管理器】</string>
     <string name="delete">删除</string>
     <string name="extend">延长</string>
     <string name="hide">隐藏</string>
+
     <string name="statement">本应用为免费第三方应用，与Valve公司或Steam无关。本应用旨在帮助用户更方便的管理备用令牌。本应用不需要联网且不收集任何用户信息。</string>
     <string name="tip">提示：备用令牌可替代令牌使用，请勿将备用码分享给可疑人士。一次性备用令牌的有效期不受限制，请勿分享多个备用码给陌生人。</string>
+
+
+
     <string name="import_code">导入</string>
+        <string name="import_title">导入备用令牌</string>
+        <string name="import_text">请输入备用令牌: </string>
+        <string name="clear">清空</string>
+        <string name="confirm">确定</string>
+        <string name="import_purge">已清除编辑框</string>
+        <string name="import_successful">导入成功</string>
+        <string name="import_failed">导入失败</string>
+        <string name="ip_helper">导入格式:\n1. 可以手动在每行输入一个备用令牌\n2. 在Steam生成备用令牌后直接复制包含序号和令牌的全部输出，然后粘贴到本应用中。详见【帮助】->【如何导入备用令牌】</string>
+        <string name="ip_tip">注意: 导入新的数据会覆盖掉原来的数据。</string>
+
+
+
     <string name="tutorial">帮助</string>
+        <string name="tutorial_title">帮助</string>
+        <string name="tutorial_copy">已复制链接到剪贴板，请到浏览器打开</string>
+        <string name="tutorial_importing">1. 用任意浏览器打开https://store.steampowered.com/twofactor/manage <b>(点击本文本即可直接打开，长按可复制链接)</b> 并登录Steam账号。\n2.点击【获取备用码】，然后输入获取到的短信验证码并点击【立即生成代码】。\n3. 选择第1个到第30个的全部备用码并复制。\n4. 回到本应用的【导入】功能中粘贴你的备用码。</string>
+        <string name="tutorial_howtouse">如果您绑定了Steam移动令牌，那么此过程将和您使用Steam一次性令牌的过程类似，当您登录Steam并输入了正确的账号和密码的时候，Steam会向您索取手机令牌，此时输入备用令牌即可正常登录。</string>
+        <string name="tutorial_safety">1. 请不要将大量备用令牌分享给他人，备用令牌的有效期不受限制，如果您将大量的备用令牌交予他人则有可能将您的账号陷入危险当中。\n2. 备用令牌可以销毁并重新生成，如果您误将备用令牌泄露，则可以通过重新生成备用令牌的方法来销毁原来生成的备用令牌。</string>
+        <string name="tutorial_update">因为本人希望把应用所需要的权限做到最少，故本应用不提供自动检查更新的功能，但您可以<b>点击此文本</b>来自行通过应用商店获取版本更新状态。</string>
+        <string name="tutorial_validation">本应用为本地应用，不需要网络权限，本应用只提供本地的令牌管理功能，令牌不会因为添加到本应用而生效，也不会因为在本应用中被删除而失效，令牌的有效性只与令牌是否被使用或销毁有关。</string>
+        <string name="update_url">https://www.coolapk.com/apk/286904</string>
+
+
     <string name="settings">设置</string>
-    <string name="about">关于</string>
-    <string name="creator"><b>酷安</b>\@资深潜水用户</string>
-    <string name="clear">清空</string>
-    <string name="confirm">确定</string>
-    <string name="import_title">请输入备用令牌: </string>
-    <string name="ip_helper">导入格式:\n1. 可以手动在每行输入一个备用令牌\n2. 在Steam生成备用令牌后直接复制包含序号和令牌的全部输出，然后粘贴到本应用中。详见【帮助】->【如何导入备用令牌】</string>
-    <string name="ip_tip">注意: 导入新的数据会覆盖掉原来的数据。</string>
     <string name="title_activity_settings">设置</string>
-    <string name="function_settings">功能开关</string>
-    <string name="purge_data">清除数据</string>
-    <string name="update_check">自动检查更新</string>
-    <string name="progress_move">禁用读条</string>
-    <string name="no_screenshot">禁止截屏</string>
-    <string name="auto_copy">自动复制令牌</string>
-    <string name="app_info">应用信息</string>
+        <string name="function_settings">功能开关</string>
+        <string name="purge_data">清除数据</string>
+        <string name="update_check">自动检查更新</string>
+        <string name="progress_move">禁用读条</string>
+        <string name="summary_progress_move">打开此选项后应用将不在令牌获取1分钟后隐藏令牌</string>
+        <string name="no_screenshot">禁止截屏</string>
+        <string name="summary_no_screenshot">打开此选项后不能在主页面截屏</string>
+        <string name="auto_copy">自动复制令牌</string>
+        <string name="summary_auto_copy">获取到令牌后自动复制到剪贴板</string>
+        <string name="purge_all">清除本地所有令牌</string>
+        <string name="summary_purge_all">此操作仅会清除掉本地所有存储的令牌，不代表这些令牌会失效</string>
+        <string name="warn">警告</string>
+        <string name="warn_content">你即将清除本地存储的所有令牌，但没有使用过的令牌仍然能够正常使用，请确认是否删除？</string>
+        <string name="yes">是</string>
+        <string name="no">否</string>
+        <string name="purge_done">清除成功</string>
+        <string name="app_info">应用信息</string>
+        <string name="rate">评价应用</string>
+        <string name="summary_rate">有建议吗？到应用商店评价本应用</string>
+        <string name="version">应用版本</string>
+        <string name="current_version">当前版本: v</string>
+
+
+
+    <string name="about">关于</string>
+        <string name="creator"><b>酷安</b>\@资深潜水用户</string>
+        <string name="privacy_statement">本应用为第三方爱好者应用，与Valve公司或Steam无关。本应用不需要联网权限，也不收集任何用户信息。\n\n使用本应用默认您接受以下协议：\n1. 本应用免费提供，用户不允许倒卖、破解或恶意修改本应用。\n2. 用户数据默认通过Android安全保护措施存储，如果您通过非安全设备或获取root权限的Android设备使用本应用的同时导致数据泄露，开发者无需承担任何责任。\n3. 因用户使用不当导致的数据泄露问题与开发者无关。</string>
+        <string name="about_title">关于</string>
+        <string name="about_begger">请截图后到微信扫描，谢谢您！</string>
+        <string name="begger_title">微信赞赏码</string>
+        <string name="copyright_contact">If you have any questions regarding copyright, please email me at ayersneo@gmail.com</string>
+        <string name="tutorial_importing_title">如何导入备用令牌</string>
+        <string name="tutorial_howtouse_title">如何使用备用令牌</string>
+        <string name="tutorial_safety_title">如何保证备用令牌的安全</string>
+        <string name="tutorial_update_title">如何让本应用保持最新版本</string>
+        <string name="tutorial_validation_title">本应用中存储的令牌是否同步</string>
+
+
+
     <string name="appwidget_text">点击获取</string>
     <string name="add_widget">添加桌面小组件</string>
-    <string name="privacy_statement">本应用为第三方爱好者应用，与Valve公司或Steam无关。本应用不需要联网权限，也不收集任何用户信息。\n\n使用本应用默认您接受以下协议：\n1. 本应用免费提供，用户不允许倒卖、破解或恶意修改本应用。\n2. 用户数据默认通过Android安全保护措施存储，如果您通过非安全设备或获取root权限的Android设备使用本应用的同时导致数据泄露，开发者无需承担任何责任。\n3. 因用户使用不当导致的数据泄露问题与开发者无关。</string>
-    <string name="tutorial_importing">1. 用任意浏览器打开https://store.steampowered.com/twofactor/manage <b>(点击本文本即可直接打开，长按可复制链接)</b> 并登录Steam账号。\n2.点击【获取备用码】，然后输入获取到的短信验证码并点击【立即生成代码】。\n3. 选择第1个到第30个的全部备用码并复制。\n4. 回到本应用的【导入】功能中粘贴你的备用码。</string>
-    <string name="tutorial_howtouse">如果您绑定了Steam移动令牌，那么此过程将和您使用Steam一次性令牌的过程类似，当您登录Steam并输入了正确的账号和密码的时候，Steam会向您索取手机令牌，此时输入备用令牌即可正常登录。</string>
-    <string name="tutorial_safety">1. 请不要将大量备用令牌分享给他人，备用令牌的有效期不受限制，如果您将大量的备用令牌交予他人则有可能将您的账号陷入危险当中。\n2. 备用令牌可以销毁并重新生成，如果您误将备用令牌泄露，则可以通过重新生成备用令牌的方法来销毁原来生成的备用令牌。"</string>
-    <string name="tutorial_update">因为本人希望把应用所需要的权限做到最少，故本应用不提供自动检查更新的功能，但您可以<b>点击此文本</b>来自行通过应用商店获取版本更新状态。</string>
-    <string name="tutorial_validation">本应用为本地应用，不需要联网权限，本应用只提供本地的令牌管理功能，令牌不会因为添加到本应用而生效，也不会因为在本应用中被删除而失效，令牌的有效性只与令牌是否被使用或销毁有关。</string>
+    <string name="widget_update">已更新，剩余容量: </string>
+
 </resources>

@@ -16,13 +16,9 @@
 
         <receiver android:name=".TokenWidget">
             <intent-filter>
-
-                <!-- 这个必须声明 -->
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <!-- 这个和SimpleWidgetProvider中的CLICK_ACTION对应 -->
                 <action android:name="com.qianshui.steamguardhelperwidget.CLICK" />
             </intent-filter>
-            <!-- 指定AppWidgetProviderInfo资源XML文件 -->
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/token_widget_info" />

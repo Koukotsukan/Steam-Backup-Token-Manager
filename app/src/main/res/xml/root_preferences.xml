@@ -5,16 +5,16 @@
 
         <SwitchPreferenceCompat
             app:key="progress_move"
-            app:summary="打开此选项后应用将不在令牌获取1分钟后隐藏令牌"
+            app:summary="@string/summary_progress_move"
             app:title="@string/progress_move" />
 
         <SwitchPreferenceCompat
             app:key="no_screenshot"
-            app:summary="打开此选项后不能在主页面截屏"
+            app:summary="@string/summary_no_screenshot"
             app:title="@string/no_screenshot" />
         <SwitchPreferenceCompat
             app:key="auto_copy"
-            app:summary="获取到令牌后自动复制到剪贴板"
+            app:summary="@string/summary_auto_copy"
             app:title="@string/auto_copy" />
 
     </PreferenceCategory>
@@ -22,19 +22,19 @@
     <PreferenceCategory app:title="@string/purge_data">
         <Preference
             app:key="purge_data"
-            app:summary="此操作仅会清除掉本地所有存储的令牌，不代表这些令牌会失效"
-            app:title="清除本地所有令牌" />
+            app:summary="@string/summary_purge_all"
+            app:title="@string/purge_all" />
     </PreferenceCategory>
 
 
     <PreferenceCategory app:title="@string/app_info">
         <Preference
             app:key="rate_app"
-            app:summary="有建议吗？到应用商店评价本应用"
-            app:title="评价应用" />
+            app:summary="@string/summary_rate"
+            app:title="@string/rate" />
         <Preference
             app:key="app_version"
-            app:summary="当前版本号: "
-            app:title="应用版本" />
+            app:summary="@string/current_version"
+            app:title="@string/version" />
     </PreferenceCategory>
 </PreferenceScreen>

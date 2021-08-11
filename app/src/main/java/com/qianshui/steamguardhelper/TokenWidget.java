@@ -62,7 +62,7 @@ public class TokenWidget extends AppWidgetProvider {
                 @Override
                 public void onFinish() {
                     currentProgress = 15;
-                    remoteViews.setTextViewText(R.id.appwidget_text, "点击获取");
+                    remoteViews.setTextViewText(R.id.appwidget_text, context.getString(R.string.appwidget_text));
                     remoteViews.setProgressBar(R.id.progressBar, 15, 15, false);
                     refreshLock = false;
                     appWidgetManager.updateAppWidget(new ComponentName(context, TokenWidget.class), remoteViews);
@@ -71,7 +71,7 @@ public class TokenWidget extends AppWidgetProvider {
             };
 
             if (codeNumbers != 0) {
-                Toast.makeText(context, "已更新，剩余容量: " + codeList.size(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, context.getString(R.string.widget_update) + codeList.size(), Toast.LENGTH_SHORT).show();
                 remoteViews.setTextViewText(R.id.appwidget_text, codeList.get(0).substring(0, 7));
                 codeList.remove(0);
                 SharedPreferences.Editor editor = context.getSharedPreferences("codeList", 0).edit();
@@ -82,8 +82,8 @@ public class TokenWidget extends AppWidgetProvider {
                 editor.commit();
                 mCountDownTimer.start();
             } else {
-                remoteViews.setTextViewText(R.id.appwidget_text, "没有数据");
-                Toast.makeText(context, "没有数据", Toast.LENGTH_SHORT).show();
+                remoteViews.setTextViewText(R.id.appwidget_text, context.getString(R.string.no_data));
+                Toast.makeText(context, context.getString(R.string.no_data), Toast.LENGTH_SHORT).show();
             }
 
 

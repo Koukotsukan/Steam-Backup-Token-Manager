@@ -32,7 +32,7 @@ public class TutorialActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
-        setTitle("帮助");
+        setTitle(this.getString(R.string.tutorial_title));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
@@ -53,7 +53,7 @@ public class TutorialActivity extends AppCompatActivity {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 clipboard.setText("https://store.steampowered.com/twofactor/manage");
                 Context context = getApplicationContext();
-                CharSequence text = "已复制链接到剪贴板，请到浏览器打开";
+                CharSequence text = context.getString(R.string.tutorial_copy);
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
@@ -64,9 +64,11 @@ public class TutorialActivity extends AppCompatActivity {
         tutorial_update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://www.coolapk.com/apk/286904");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
+                if (!getApplicationContext().getString(R.string.update_url).equalsIgnoreCase("none")) {
+                    Uri uri = Uri.parse(getApplicationContext().getString(R.string.update_url));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                    startActivity(intent);
+                }
             }
         });
     }

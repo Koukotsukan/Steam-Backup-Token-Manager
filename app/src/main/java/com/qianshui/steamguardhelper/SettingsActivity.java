@@ -59,42 +59,16 @@ public class SettingsActivity extends AppCompatActivity {
             Preference app_version = findPreference("app_version");
             Preference rate_app = findPreference("rate_app");
 
-
-//            SwitchPreferenceCompat progress_move = findPreference("progress_move");
-//            progress_move.setOnPreferenceChangeListener((preference, newValue) -> {
-//                return true;
-//            });
-//            progress_move.setOnPreferenceChangeListener((preference, newValue) -> {
-//                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-//                builder.setTitle("提示");
-//                builder.setMessage("更改此选项需要重启应用，请确认是否继续？");
-//                builder.setPositiveButton("否", null);
-//                builder.setNegativeButton("是", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        Intent mStartActivity = new Intent(getContext(), MainActivity.class);
-//                        int mPendingIntentId = 123456;
-//                        PendingIntent mPendingIntent = PendingIntent.getActivity(getContext(), mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
-//                        AlarmManager mgr = (AlarmManager)getContext().getSystemService(Context.ALARM_SERVICE);
-//                        mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
-//                        System.exit(0);
-//                    }
-//                });
-//                builder.show();
-//                return false;
-//            });
-
-
             purge_data.setOnPreferenceClickListener(preference1 -> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.AlertDialogStyle);
-                builder.setTitle("警告");
-                builder.setMessage("你即将清除本地存储的所有令牌，但没有使用过的令牌仍然能够正常使用，请确认是否删除？");
-                builder.setPositiveButton("否", null);
-                builder.setNegativeButton("是", new DialogInterface.OnClickListener() {
+                builder.setTitle(this.getString(R.string.warn));
+                builder.setMessage(this.getString(R.string.warn_content));
+                builder.setPositiveButton(this.getString(R.string.no), null);
+                builder.setNegativeButton(this.getString(R.string.yes), new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         clear(getContext());
-                        CharSequence text = "清除成功";
+                        CharSequence text = getContext().getString(R.string.purge_done);
                         int duration = Toast.LENGTH_SHORT;
                         Toast toast = Toast.makeText(getActivity(), text, duration);
                         toast.show();
@@ -113,7 +87,7 @@ public class SettingsActivity extends AppCompatActivity {
 
 
 
-            app_version.setSummary("当前版本号：v" + getAppVersionName(getContext()));
+            app_version.setSummary(this.getString(R.string.current_version) + getAppVersionName(getContext()));
 
 
         }

@@ -34,7 +34,7 @@ public class AboutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-        setTitle("关于");
+        setTitle(this.getString(R.string.about_title));
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
 
@@ -71,7 +71,7 @@ public class AboutActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "请截图后到微信扫描，谢谢您！";
+                CharSequence text = context.getString(R.string.about_begger);
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
@@ -82,7 +82,7 @@ public class AboutActivity extends AppCompatActivity {
             @Override
             public boolean onLongClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "请截图后到微信扫描，谢谢您！";
+                CharSequence text = context.getString(R.string.about_begger);
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
