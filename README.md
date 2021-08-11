@@ -1,7 +1,7 @@
 # Steam-Backup-Token-Manager
 [English](README_EN.md) 
 
-[繁体中文](README_zh-Hant.md)
+[繁體中文](README_zh-Hant.md)
 
 这是一个第三方Steam备用令牌管理器，可以帮助你更方便的管理Steam备用令牌，让备用机、Wear OS或平板电脑也能用作Steam登录。
 
