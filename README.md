@@ -1,4 +1,8 @@
 # Steam-Backup-Token-Manager
+[English](README_EN.md) 
+
+[繁體中文](README_zh-Hant.md)
+
 这是一个第三方Steam备用令牌管理器，可以帮助你更方便的管理Steam备用令牌，让备用机、Wear OS或平板电脑也能用作Steam登录。
 
 ## Features: 
@@ -25,6 +29,8 @@ If there are any questions regarding copyright, please open an issue on GitHub.
 ## Download:
 [直链下载](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/releases/latest/download/app-release.apk)
 
-[酷安商店下载](http://www.coolapk.com/apk/286904)
+[酷安商店下载【待审核】](https://www.coolapk.com/apk/286904)
+
+小米应用商店(海外)下载： 请自行在GetApps搜索
 
 [华为应用商店(海外)下载](https://appgallery.huawei.com/#/app/C104607179)
