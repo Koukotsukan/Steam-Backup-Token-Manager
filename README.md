@@ -31,6 +31,6 @@ If there are any questions regarding copyright, please open an issue on GitHub.
 
 [酷安商店下载【待审核】](https://www.coolapk.com/apk/286904)
 
-[小米应用商店(海外)下载【待审核】](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/)
+小米应用商店(海外)下载： 请自行在GetApps搜索
 
 [华为应用商店(海外)下载](https://appgallery.huawei.com/#/app/C104607179)
