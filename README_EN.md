@@ -29,7 +29,7 @@ Mozilla Public License 2.0, see details please click [here](LICENSE)
 ## Download:
 [Direct Link](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/releases/latest/download/app-release.apk)
 
-[CoolAPK Market(Chinese Mainland)【Under Review】](https://www.coolapk.com/apk/286904)
+[CoolAPK Market(Chinese Mainland)](https://www.coolapk.com/apk/286904)
 
 Xiaomi GetApps: Search 【Steam Backup Token Manager】 in GetApps
 
