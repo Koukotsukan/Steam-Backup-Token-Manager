@@ -29,7 +29,7 @@ If there are any questions regarding copyright, please open an issue on GitHub.
 ## Download:
 [直链下载](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/releases/latest/download/app-release.apk)
 
-[酷安商店下载【待审核】](https://www.coolapk.com/apk/286904)
+[酷安商店下载](https://www.coolapk.com/apk/286904)
 
 小米应用商店(海外)下载： 请自行在GetApps搜索
 
