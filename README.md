@@ -11,9 +11,10 @@
 3. 安卓**桌面小组件**支持，可以更快捷的提取令牌
 
 ## Screenshots:
-主页面： https://i.loli.net/2021/08/09/Jt2ZzbfjGExpPDr.jpg
+主页面： <img src="https://github.com/Koukotsukan/Steam-Backup-Token-Manager/assets/49346779/635a9165-6688-4d14-8313-36603c8a0a61" height="50%">
 
-桌面小部件： https://i.loli.net/2021/08/09/olsVPiypcEnSWN6.png
+
+桌面小部件： ![olsVPiypcEnSWN6](https://github.com/Koukotsukan/Steam-Backup-Token-Manager/assets/49346779/1cd1cc93-02ca-45e7-b9a8-8e57996537d7)
 
 ## Exemption Disclaimer:
 本应用为免费第三方应用，与Valve公司或Steam无关。
